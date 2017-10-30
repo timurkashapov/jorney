@@ -5,8 +5,8 @@ import java.util.List;
  *
  * @author Timur Kashapov
  * @version 0.0.1
- * @since 2017
- */
+ * @since 2017git 
+s */
 public class Locality {
 
     /**
@@ -28,4 +28,4 @@ public class Locality {
      * Станции.
      */
     private List<Station> stations;
-}
+}s
