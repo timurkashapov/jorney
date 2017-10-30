@@ -41,11 +41,8 @@ public class Locality {
     * Добавление станции.
     */
     public void addStation(Station station) {
-
-        if (stations == null) {
-            stations = new ArrayList();
-            stations.add(station);
-        }
-
+        stations.add(station);
     }
+
+    
 }
