@@ -6,7 +6,7 @@ import java.util.List;
  *
  * @author Timur Kashapov
  * @version 0.0.1
- * @since 2017git
+ * @since 2017
 */
 public class Locality {
 
@@ -31,12 +31,15 @@ public class Locality {
     private List<Station> stations;
 
     /**
-     *
+     * 
      */
     public Locality() {
 
     }
 
+    /**
+    * Добавление станции.
+    */
     public void addStation(Station station) {
 
         if (stations == null) {
