@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -5,7 +6,7 @@ import java.util.List;
  *
  * @author Timur Kashapov
  * @version 0.0.1
- * @since 2017git 
+ * @since 2017git
 s */
 public class Locality {
 
@@ -28,4 +29,20 @@ public class Locality {
      * Станции.
      */
     private List<Station> stations;
-}s
+
+    /**
+     *
+     */
+    public Locality() {
+
+    }
+
+    public void addStation(Station station) {
+
+        if (stations == null) {
+            stations = new ArrayList();
+            stations.add(station);
+        }
+
+    }
+}
