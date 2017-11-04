@@ -39,10 +39,19 @@ public class Locality {
 
     /**
     * Добавление станции.
+    * @param station станция.
     */
     public void addStation(Station station) {
         stations.add(station);
     }
 
-    
+    /**
+    * Удаление станции.
+    * @param title название станции.
+    */
+    public void delStation(String title) {
+        // Поиск и удаление станции по названию.
+    }
+
 }
+    
