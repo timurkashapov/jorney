@@ -7,6 +7,16 @@
  */
 public class Station {
 
+    private String address;
+
+//    private Coordinate coordinates;
+
+    private enum STATION_TYPE {AUTO, AERO, TRAIN}
+
+    private Locality location;
+
+    private String phone;
+
     /**
      *
      */

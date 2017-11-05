@@ -53,5 +53,12 @@ public class Locality {
         // Поиск и удаление станции по названию.
     }
 
+    /**
+     * Получение списка станций населённого пункта.
+     * @return список станций.
+     */
+    public List<Station> getStations() {
+        return stations;
+    }
 }
     
