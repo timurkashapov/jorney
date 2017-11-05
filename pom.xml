@@ -11,7 +11,7 @@
     <modules>
         <module>geography</module>
         <module>transport</module>
-        <module>clients</module>
+        <module>client</module>
         <module>presentation</module>
         <module>app</module>
         <module>persistence</module>
