@@ -13,7 +13,7 @@
         <module>transport</module>
         <module>clients</module>
         <module>presentation</module>
-        <module>model</module>
+        <module>app</module>
         <module>persistence</module>
     </modules>
 
