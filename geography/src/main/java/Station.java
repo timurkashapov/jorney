@@ -51,7 +51,7 @@ public class Station {
     public static final class Builder {
 
 
-        public Station build() {
+        public static Station build() {
             return new Station();
         }
     }
