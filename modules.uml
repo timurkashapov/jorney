@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>MODULES</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="-35.0" y="-15.0">mdl-transport</node>
+    <node x="-39.0" y="65.0">mdl-geography</node>
+    <node x="-26.0" y="145.0">mdl-clients</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="1.0" x="79.0" y="90.0" />
+  <SelectedNodes />
+  <Categories />
+</Diagram>
+
