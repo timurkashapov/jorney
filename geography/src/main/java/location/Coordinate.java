@@ -10,9 +10,14 @@ package location;
 public class Coordinate {
 
     /**
-     * Координаты.
+     * Координата x.
      */
     private Double x;
+
+    /**
+     * Координата y.
+     */
+    private Double y;
 
     public Double getX() {
         return x;
@@ -30,5 +35,4 @@ public class Coordinate {
         this.y = y;
     }
 
-    private Double y;
 }
