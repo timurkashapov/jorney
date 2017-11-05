@@ -41,7 +41,7 @@ public class Locality {
     * Добавление станции.
     * @param station станция.
     */
-    public void addStation(Station station) {
+    public void addStation(final Station station) {
         stations.add(station);
     }
 
@@ -49,7 +49,7 @@ public class Locality {
     * Удаление станции.
     * @param title название станции.
     */
-    public void delStation(String title) {
+    public void delStation(final String title) {
         // Поиск и удаление станции по названию.
     }
 
