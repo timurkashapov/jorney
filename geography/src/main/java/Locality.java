@@ -1,5 +1,4 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Set;
 
 /**
  * Населенный пункт.
@@ -28,7 +27,7 @@ public class Locality {
     /**
      * Станции.
      */
-    private List<Station> stations;
+    private Set<Station> stations;
 
     /**
      * 
@@ -57,7 +56,7 @@ public class Locality {
      * Получение списка станций населённого пункта.
      * @return список станций.
      */
-    public List<Station> getStations() {
+    public Set<Station> getStations() {
         return stations;
     }
 }
