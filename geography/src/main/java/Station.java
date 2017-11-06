@@ -1,3 +1,4 @@
+import location.Address;
 import location.Coordinate;
 
 /**
@@ -22,7 +23,7 @@ public class Station {
     /**
      * Адрес станции.
      */
-    private String address;
+    private Address address;
 
     /**
      * Координаты станции.
@@ -61,6 +62,14 @@ public class Station {
 
     public Locality getLocation() {
         return location;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
     }
 
     public void setLocation(Locality location) {
