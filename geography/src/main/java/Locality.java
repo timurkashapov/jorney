@@ -44,6 +44,7 @@ public class Locality {
     */
     public void addStation(final Station station) {
         stations.add(station);
+        station.setLocation(this);
     }
 
     /**

@@ -14,7 +14,6 @@ public class LocalityTest {
         location.setTitle("Shosse Entuziastov");
         location.setDistrict("Sokolinaya Gora");
         location.setRegion("Moscow");
-        station.setLocation(location);
     }
 
     @Test
