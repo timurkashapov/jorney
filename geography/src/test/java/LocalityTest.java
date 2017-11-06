@@ -5,12 +5,13 @@ import static org.junit.Assert.*;
 
 public class LocalityTest {
 
-    private static Locality location = new Locality();
-    private static Station station   = new Station();
+    private static Locality location;
+    private static Station station;
 
     @Before
     public void init() {
-
+        location = new Locality();
+        station  = new Station();
         location.setTitle("Shosse Entuziastov");
         location.setDistrict("Sokolinaya Gora");
         location.setRegion("Moscow");
@@ -39,4 +40,8 @@ public class LocalityTest {
         // TODO: реализовать тестирование возврата коллекции станций.
     }
 
+    @Test
+    public boolean containsStation(Locality location, Station station) {
+        return location.getStations().contains(station);
+    }
 }

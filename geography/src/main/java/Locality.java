@@ -60,24 +60,7 @@ public class Locality {
     }
 
     public boolean contains(Station station) {
-
-        // TODO: реализовать содержательность станции в данной локальности.
-//        boolean result = false;
-//
-//        for(Station item: stations) {
-//
-//            if (item.equals(station)) {
-//                title.equals(item.getLocation().getTitle());
-//                district.equals(item.getLocation().getDistrict());
-//                region.equals(item.getLocation().getRegion());
-//
-//
-//            }
-//
-//
-//            if (result) break;
-//        }
-//        return result;
+        // TODO: реализовать проверку наличия станции в данной локальности.
         return true;
     }
 
