@@ -1,3 +1,6 @@
+import com.sun.webkit.dom.HTMLOptionsCollectionImpl;
+import edu.emory.mathcs.backport.java.util.Collections;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -50,7 +53,7 @@ public class Locality {
     * @param title название станции.
     */
     public void delStation(final String title) {
-        // Поиск и удаление станции по названию.
+        // TODO Поиск и удаление станции по названию.
     }
 
     /**
@@ -58,6 +61,8 @@ public class Locality {
      * @return список станций.
      */
     public Set<Station> getStations() {
+
+//        return Collections.emptySet();
         return stations;
     }
 }

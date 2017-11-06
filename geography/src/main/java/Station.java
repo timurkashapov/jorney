@@ -20,6 +20,11 @@ public class Station {
     private Coordinate coordinates;
 
     /**
+     * Название станции.
+     */
+    private String title;
+
+    /**
      * Тип станции.
      */
     private enum STATION_TYPE {AUTO, AERO, TRAIN}
@@ -41,19 +46,12 @@ public class Station {
         // TODO:
     }
 
-    /**
-     * Строитель станций.
-     *
-     * @author Timur Kashapov
-     * @version 0.0.1
-     * @since 2017
-     */
-    public static final class Builder {
+    public String getTitle() {
+        return title;
+    }
 
-
-        public static Station build() {
-            return new Station();
-        }
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     @Override
@@ -77,4 +75,21 @@ public class Station {
         result = 31 * result + (phone != null ? phone.hashCode() : 0);
         return result;
     }
+
+    /**
+     * Строитель станций.
+     *
+     * @author Timur Kashapov
+     * @version 0.0.1
+     * @since 2017
+     */
+    public static final class Builder {
+
+
+        public static Station build() {
+            return new Station();
+        }
+    }
+
+
 }
