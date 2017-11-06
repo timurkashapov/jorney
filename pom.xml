@@ -15,6 +15,7 @@
         <module>presentation</module>
         <module>app</module>
         <module>persistence</module>
+        <module>utils</module>
     </modules>
 
     <properties>

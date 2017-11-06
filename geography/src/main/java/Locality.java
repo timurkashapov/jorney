@@ -1,7 +1,4 @@
-import java.util.Collection;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 /**
  * Населенный пункт.
@@ -94,7 +91,7 @@ public class Locality {
      * @return список станций.
      */
     public Set<Station> getStations() {
-        return stations.isEmpty() ? Collections.emptySet() : stations;
+        return CommonUtils.getSafeSet(stations);
     }
 
     @Override
