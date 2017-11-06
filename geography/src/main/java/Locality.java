@@ -1,4 +1,5 @@
 import java.util.Collection;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -93,9 +94,7 @@ public class Locality {
      * @return список станций.
      */
     public Set<Station> getStations() {
-
-//        return Collections.emptySet();
-        return stations;
+        return stations.isEmpty() ? Collections.emptySet() : stations;
     }
 
     @Override
