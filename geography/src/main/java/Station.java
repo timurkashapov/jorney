@@ -10,6 +10,16 @@ import location.Coordinate;
 public class Station {
 
     /**
+     * Экземпляр станция.
+     */
+    private Station station;
+
+    /**
+     * Населенный пункт станции.
+     */
+    private Locality location;
+
+    /**
      * Адрес станции.
      */
     private String address;
@@ -30,11 +40,6 @@ public class Station {
     private enum STATION_TYPE {AUTO, AERO, TRAIN}
 
     /**
-     * Населенный пункт станции.
-     */
-    private Locality location;
-
-    /**
      * Телефоны справочной службы.
      */
     private String phone;
@@ -42,8 +47,24 @@ public class Station {
     /**
      * Конструктор.
      */
-    private Station() {
-        // TODO:
+    public Station() {
+        // TODO: 1. скорректировать создание экземпляра станции через строитель.
+    }
+
+    public Station getStation() {
+        return station;
+    }
+
+    public void setStation(Station station) {
+         this.station = station;
+     }
+
+    public Locality getLocation() {
+        return location;
+    }
+
+    public void setLocation(Locality location) {
+        this.location = location;
     }
 
     public String getTitle() {
@@ -52,6 +73,11 @@ public class Station {
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public Station getByTitle(final String title) {
+        // TODO: 2. реализовать получение станции по её названию.
+        return new Station();
     }
 
     @Override
@@ -75,21 +101,4 @@ public class Station {
         result = 31 * result + (phone != null ? phone.hashCode() : 0);
         return result;
     }
-
-    /**
-     * Строитель станций.
-     *
-     * @author Timur Kashapov
-     * @version 0.0.1
-     * @since 2017
-     */
-    public static final class Builder {
-
-
-        public static Station build() {
-            return new Station();
-        }
-    }
-
-
 }
