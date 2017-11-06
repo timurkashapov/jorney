@@ -26,11 +26,6 @@ public class Station {
     private Address address;
 
     /**
-     * Координаты станции.
-     */
-    private Coordinate coordinates;
-
-    /**
      * Название станции.
      */
     private String title;
@@ -97,7 +92,6 @@ public class Station {
         Station station = (Station) o;
 
         if (address != null ? !address.equals(station.address) : station.address != null) return false;
-        if (coordinates != null ? !coordinates.equals(station.coordinates) : station.coordinates != null) return false;
         if (location != null ? !location.equals(station.location) : station.location != null) return false;
         return phone != null ? phone.equals(station.phone) : station.phone == null;
     }
@@ -105,7 +99,6 @@ public class Station {
     @Override
     public int hashCode() {
         int result = address != null ? address.hashCode() : 0;
-        result = 31 * result + (coordinates != null ? coordinates.hashCode() : 0);
         result = 31 * result + (location != null ? location.hashCode() : 0);
         result = 31 * result + (phone != null ? phone.hashCode() : 0);
         return result;

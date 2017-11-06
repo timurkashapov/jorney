@@ -10,6 +10,11 @@ package location;
 public class Address {
 
     /**
+     * Координаты станции.
+     */
+    private Coordinate coordinates;
+
+    /**
      * Почтовый индекс.
      */
     private Integer zipc;
@@ -28,6 +33,14 @@ public class Address {
      * Номер квартиры.
      */
     private Integer apartment;
+
+    public Coordinate getCoordinates() {
+        return coordinates;
+    }
+
+    public void setCoordinates(Coordinate coordinates) {
+        this.coordinates = coordinates;
+    }
 
     public Integer getZipc() {
         return zipc;
