@@ -10,6 +10,10 @@ public class LocalityTest {
 
     @Before
     public void init() {
+
+        location.setTitle("Shosse Entuziastov");
+        location.setDistrict("Sokolinaya Gora");
+        location.setRegion("Moscow");
         station.setLocation(location);
     }
 

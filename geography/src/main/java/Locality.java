@@ -60,12 +60,48 @@ public class Locality {
 
     public boolean contains(Station station) {
 
-        boolean result = false;
+        // TODO: реализовать содержательность станции в данной локальности.
+//        boolean result = false;
+//
+//        for(Station item: stations) {
+//
+//            if (item.equals(station)) {
+//                title.equals(item.getLocation().getTitle());
+//                district.equals(item.getLocation().getDistrict());
+//                region.equals(item.getLocation().getRegion());
+//
+//
+//            }
+//
+//
+//            if (result) break;
+//        }
+//        return result;
+        return true;
+    }
 
-        for(Station item: stations) {
-            result = item.equals(station);
-        }
-        return result;
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getDistrict() {
+        return district;
+    }
+
+    public void setDistrict(String district) {
+        this.district = district;
+    }
+
+    public String getRegion() {
+        return region;
+    }
+
+    public void setRegion(String region) {
+        this.region = region;
     }
 
     /**
