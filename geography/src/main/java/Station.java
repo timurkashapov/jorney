@@ -55,16 +55,16 @@ public class Station {
          this.station = station;
      }
 
-    public Locality getLocation() {
-        return location;
-    }
-
     public Address getAddress() {
         return address;
     }
 
     public void setAddress(Address address) {
         this.address = address;
+    }
+
+    public Locality getLocation() {
+        return location;
     }
 
     public void setLocation(Locality location) {
